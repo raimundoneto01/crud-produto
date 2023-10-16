@@ -1,38 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto Crud</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <header class="flex justify-between px-10 items-center bg-sky-900 py-4 ">
-        <div>
-            <img class="w-32" 
-            src="./imagens/digital-college-cores-logo-digital.webp"
-             alt="logo">
-        </div>
-        <div class="flex gap-3 items-center">
-            <img class="w-8" src="./imagens/icons8-mapa-mental-50.png" alt="foto usuario">
-            <p class="text-white">Olá, NETO RESENDE</p>
-        </div>
+  </head>
+  <body>
+    <header class="flex justify-between px-10 items-center bg-sky-900 py-4">
+      <div>
+        <img
+          class="w-32"
+          src="./imagens/digital-college-cores-logo-digital.webp"
+          alt="logo"
+        />
+      </div>
+      <div class="flex gap-3 items-center">
+        <img
+          class="w-8"
+          src="./imagens/icons8-mapa-mental-50.png"
+          alt="foto usuario"
+        />
+        <p class="text-white">Olá, NETO RESENDE</p>
+      </div>
     </header>
 
     <main class="relative flex min-h-screen">
-        <nav class="w-1/6 fixed left-0 h-full">
-            <ul>
-                <li>Home</li>
-                <li>Produto</li>
-                <li>Clientes</li>
-            </ul>
-        </nav>
-        <section class="bg-slate-50 px-8 py-4 w-5/6 absolute right-0">
-            <div class="flex justify-between intems-center">
-                <h2>Produtos</h2>
-                <button>Novo Produto</button>
-            </div>
-        </section>
+      <nav class="w-1/6 fixed left-0 h-full">
+        <ul class="px-4 flex flex-col gap-3">
+          <li class="texte-lg font-semibold">Home</li>
+          <li class="texte-lg font-semibold">Produto</li>
+          <li class="texte-lg font-semibold">Clientes</li>
+        </ul>
+      </nav>
+      <section class="bg-slate-50 px-8 py-4 w-5/6 absolute right-0">
+        <div class="flex justify-between intems-center">
+          <h2 class="font-bold text-xl">Produtos</h2>
+          <button
+            class="px-3 py-2 rounded-md bg-sky-900 text-white hover:bg-sky-800">
+            Adicionar
+          </button>
+        </div>
+        <div class="w-full mt-3">
+          <table class="w-full table-auto shadow rounded-md overflow-hidden">
+            <thead class="bg-gray-800 text-white">
+              <tr>
+                <th  class="text-left p-3">Name</th>
+                <th class="text-left p-3">Preço</th>
+                <th class="text-left p-3">Quantidade</th>
+                <th class="text-left p-3">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr  class="odd:bg-[#f2f2f2] even:bg-white">
+                <td class="text-center ">iphone x 64Gb Grey</td>
+                <td class="text-center">$ 999,00</td>
+                <td class="text-center">1</td>
+                <td class="text-center p-3">$ 999,00</td>
+              </tr>
+              <tr class="odd:bg-[#f2f2f2] even:bg-white">
+                <td class="text-center">Sansung SB Black</td>
+                <td class="text-center">$ 755,00</td>
+                <td class="text-center">2</td>
+                <td class="text-center p-3">$ 755,00</td>
+              </tr>
+              <tr class="odd:bg-[#f2f2f2] even:bg-white">
+                <td class="text-center">Game Console Controller</td>
+                <td class="text-center">$ 22,00</td>
+                <td class="text-center">3</td>
+                <td class="text-center p-3">$ 22,00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
